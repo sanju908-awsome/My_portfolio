@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Oswald", "Impact", sans-serif;
+  --font-serif-editorial: "Newsreader", "Georgia", serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-warm-ivory: #F5EDE4;
+  --color-soft-white: #FBF8F4;
+  --color-espresso: #4A3A2D;
+  --color-espresso-dark: #32251B;
+  --color-taupe: #7B6B5B;
+  --color-mocha: #8C7965;
+  --color-beige: #DCCBB8;
+  --color-beige-light: #ECE1D4;
+  --color-beige-dark: #CBB49E;
+  --color-border-warm: #E2D6C7;
+  --color-border-dark: #D4C4B2;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-warm-ivory);
+    color: var(--color-espresso);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom editorial scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5EDE4;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4C4B2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7B6B5B;
+}
+
+/* Editorial line-clamp & utilities */
+.editorial-grid-lines {
+  background-image: linear-gradient(to right, rgba(123, 107, 91, 0.08) 1px, transparent 1px);
+  background-size: 120px 100%;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1.5px #4A3A2D;
+  color: transparent;
+}
+
+.text-stroke-light {
+  -webkit-text-stroke: 1px rgba(74, 58, 45, 0.35);
+  color: transparent;
+}
