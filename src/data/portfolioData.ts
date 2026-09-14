@@ -30,7 +30,7 @@ export const personalInfo = {
   currentFocus: "Full Stack • AI/ML • Computer Vision • Cloud",
 
   // Contact & Social Links
-  email: "sanjukarra15@gmail.com",
+  email: "sanjuwork10@gmail.com",
   githubUrl: "https://github.com", // update with your exact GitHub username
   linkedinUrl: "https://linkedin.com", // update with your exact LinkedIn username
   resumeFilename: "Sanjay_Kumar_Resume_CSE.pdf",
